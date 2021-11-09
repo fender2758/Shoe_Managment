@@ -1,0 +1,34 @@
+<!-- Load TensorFlow.js. This is required to use MobileNet. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.6.0"></script>
+<!-- Load the MobileNet model. -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>-->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script> -->
+
+
+<head>
+  <title>Shoe detector</title>
+</head>
+
+<p><strong><font color="RoyalBlue"; size =12>Shoe detector</font>
+<p><strong><font size =6>Please wait until the page is loaded and allow camera access.</font>
+  
+<!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
+
+<div id="videoContainer" style="position:relative; width:100%; height:100%;">
+  <video
+    autoplay
+    muted
+    playsinline
+    id="video"
+    style="position:absolute; z-index:1;"
+  ></video>
+  <canvas id="canvas" style="position:absolute; z-index:2; "></canvas>
+</div>
+
+<!-- <canvas id="canvas" width="500" height="500"></canvas>
+<video id="video" autoplay muted playsinline></video> -->
+<div id="status"></div>
+
+<!-- Place your code in the script tag below. You can also use an external .js file -->
+<script src="index.js"></script>
